@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainapp"
+    tools:context=".steel">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="368dp"
+            android:layout_height="837dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_menu" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="314dp"
+            android:layout_height="609dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.381"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintVertical_bias="0.504"
+            app:srcCompat="@drawable/paperbg" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="314dp"
+            android:layout_height="609dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintVertical_bias="0.348"
+            app:srcCompat="@drawable/paperbg" />
+
+        <TextView
+            android:id="@+id/outputText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:fontFamily="@font/arang"
+            android:text="Output"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <ImageButton
+            android:id="@+id/backButton6"
+            android:layout_width="53dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="136dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/explainText4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/prevImage2"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintBottom_toTopOf="@+id/explainText4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/steel" />
+
+        <TextView
+            android:id="@+id/explainText4"
+            android:layout_width="229dp"
+            android:layout_height="231dp"
+            android:fontFamily="@font/arang"
+            android:text="Steel is an alloy of iron and carbon that demonstrates improved mechanical properties compared to the pure form of iron.\n
+            \nDue to steel's high elastic modulus, yield strength, fracture strength and low raw material cost, steel is one of the most commonly manufactured materials in the world.\n
+            \nSteel is used in buildings (as concrete reinforcing rods), in bridges, infrastructure, tools, ships, trains, cars, bicycles, machines, electrical appliances, furniture, and weapons."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/componentText5"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/arang"
+            android:gravity="center"
+            android:text="Steel"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/prevImage2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outputText6" />
+
+        <TextView
+            android:id="@+id/mixText5"
+            android:layout_width="119dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/arang"
+            android:gravity="center"
+            android:text="Iron + Carbon"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/explainText4"
+            app:layout_constraintEnd_toStartOf="@+id/prevImage2"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/componentText5"
+            app:layout_constraintVertical_bias="0.588" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="226dp"
+            android:layout_height="257dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/mechasenku" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="277dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
